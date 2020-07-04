@@ -1,4 +1,4 @@
-This repository holds to code for the following paper:
+This repository contains code for the following paper:
  - Tongfei Chen, Yunmo Chen, Benjamin Van Durme (2020): [Hierarchical Entity Typing via Multi-level Learning to Rank](https://www.aclweb.org/anthology/2020.acl-main.749/). In _Proceedings of ACL_.
 
  ```bibtex
