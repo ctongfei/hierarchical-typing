@@ -1,0 +1,6 @@
+from hiertype.contextualizers.contextualizer import Contextualizer
+from hiertype.contextualizers.hugging_face_contextualizer import HuggingFaceContextualizer, \
+    BERTContextualizer, XLMRobertaContextualizer
+from hiertype.contextualizers.elmo_contextualizer import ELMoContextualizer
+
+from hiertype.contextualizers.get_contextualizer import get_contextualizer

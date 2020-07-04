@@ -1,0 +1,13 @@
+torch>=1.0.0
+h5py
+tqdm~=4.43.0
+numpy~=1.18.4
+allennlp>=0.8.4
+pandas~=1.0.4
+msgpack~=1.0.0
+msgpack-numpy
+bsddb3~=6.2.7
+spacy>=2.0.0
+ansicolors
+transformers~=2.5.1
+fire~=0.2.1
