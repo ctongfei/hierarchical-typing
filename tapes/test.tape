@@ -1,24 +1,26 @@
-task testHierarchical : hiertype
+
+task test : hiertype
   < data=@
-  < dump=$dump@elmoCache
+  < dump=$dump@cache
   < ontology=@
-  < model=$out@trainHierarchical
+  < model=$out@train
   > out
   > metrics="metrics.txt"
-  :: maxBranchingFactors=@ :: strategies=@ :: delta=@ :: otherDelta=@
+  :: maxBranchingFactors=@ :: delta=@ :: strategies=@ :: otherDelta=@
   :: grid=@
   :: .submitter=$grid .action_flags=@ .resource_flags=@
   :: gpuId=@
 {
   mkdir -p $out
-  PYTHONPATH=$hiertype python $hiertype/hiertype/commands/run.py \
+  PYTHONPATH=$hiertype CUDA_VISIBLE_DEVICES=$gpuId \
+  python $hiertype/hiertype/commands/run.py \
     --test $dump/test.db:$data/test.tsv \
     --model_dir $model \
     --out $out \
-    --gpuid $gpuId \
+    --gpuid 0 \
     --strategies $strategies \
-    --max_branching_factors $testBranch0 $testBranch1 1 \
-    --delta $testDelta0 $testDelta1 0 \
-    --other_delta $testTopOtherDelta \
+    --max_branching_factors $maxBranchingFactors \
+    --delta $delta \
+    --other_delta $otherDelta \
     > $metrics
 }
