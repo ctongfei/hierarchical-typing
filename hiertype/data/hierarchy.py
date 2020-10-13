@@ -82,7 +82,7 @@ class Hierarchy:
             return None
 
     def parent(self, x: int) -> int:
-        """Returns the set of parent nodes of this node."""
+        """Returns the parent node of this node."""
         return self._parent[x]
 
     def path_to_root(self, x: int) -> List[int]:

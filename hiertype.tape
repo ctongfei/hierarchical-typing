@@ -17,4 +17,4 @@ import "tapes/bbn-data.tape"
 
 import "tapes/cache.tape"
 import "tapes/train.tape"
-import "tapes/test-cached.tape"
+import "tapes/test.tape"

@@ -36,4 +36,3 @@ class Alphabet:
             idx_to_sym.append(sym)
 
         return cls(sym_to_idx, idx_to_sym)
-    

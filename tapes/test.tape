@@ -1,8 +1,8 @@
 task testHierarchical : hiertype
   < data=@
-  < dump=$dump@elmoCache
+  < dump=$dump@cache
   < ontology=@
-  < model=$out@trainHierarchical
+  < model=$out@train
   > out
   > metrics="metrics.txt"
   :: maxBranchingFactors=@ :: strategies=@ :: delta=@ :: otherDelta=@

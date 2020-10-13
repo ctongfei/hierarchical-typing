@@ -1,3 +1,2 @@
 from hiertype.decoders.hierarchical_decoder import HierarchyDecoder
 from hiertype.decoders.beam_decoder import BeamDecoder
-from hiertype.decoders.borda_voting_decoder import BordaVotingDecoder

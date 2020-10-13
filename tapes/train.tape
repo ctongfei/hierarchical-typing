@@ -46,6 +46,6 @@ plan TrainFiger {
 }
 
 plan TrainOntoNotes {
-  reach train via (Dataset: OntoNotes) * (Contextualizer: elmo-original) * (EmbDropout: 0.6) * (Dropout: 0.1) * (ThresholdRatio: 0.15)
-    * (RelConsCoef: 0.1) * (Regularizer: 0.001) * (MarginMode: graded) * (WithOther: False)
+  reach train via (Dataset: OntoNotes) * (Contextualizer: elmo-original) * (EmbDropout: 0.6) * (Dropout: 0.1) *
+  (ThresholdRatio: 0.15) * (RelConsCoef: 0.1) * (Regularizer: 0.001) * (MarginMode: graded) * (WithOther: False)
 }
